@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e6f0fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-box {
+    background-color: #fff;
+    padding: 30px;
+    box-shadow:
+            0px   /* horizontal offset */
+            0px   /* vertical offset */
+            10px  /* blur radius */
+            rgba(0, 0, 0, 0.1);  /* shadow color */
+
+    text-align: center;
+    border-radius: 8px;
+    width: 300px;
+}
+
+h2 {
+    margin: 0;
+    color: #333;
+    font-size: 24px;
+}
+
+h3 {
+    /*Adjust the top and bottom margins*/
+    margin: 10px 0 20px 0;
+    color: #666;
+    font-size: 18px;
+}
+
+input {
+    display: block;
+    width: 80%; /* Adjust the percentage as needed */
+    padding: 10px;
+    margin: 10px auto;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    /*calc() Function: This is a special tool in CSS that lets you do math calculations to set sizes.
+    100%: This means the full width of the parent container. So, if your parent box is 500 pixels wide, 100% is 500 pixels.
+    - 20px: This means you subtract 20 pixels from the total width. It makes the element 20 pixels smaller*/
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 20px auto;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.forgot-password,
+.create-account {
+    margin: 10px 0;
+}
