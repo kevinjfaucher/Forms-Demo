@@ -6,6 +6,25 @@ body {
     position: relative; /* Sets the position to relative for positioning child elements */
 }
 
+
+/* 
+top: 50%;
+
+    This property sets the top edge of the .container element to 50% of the height of its containing block. This moves the top edge of the .container to the middle of the containing block vertically.
+
+left: 50%;
+
+    This property sets the left edge of the .container element to 50% of the width of its containing block. This moves the left edge of the .container to the middle of the containing block horizontally.
+
+transform: translate(-50%, -50%);
+
+    The transform property is used to move (translate) the .container element from its current position.
+    translate(-50%, -50%) moves the element by 50% of its own width to the left and 50% of its own height up.
+    Without this transformation, the top: 50%; and left: 50%; properties would align the top-left corner of the element at the center of the container, which is not the desired centering effect.
+    By translating the element by -50% along both the X and Y axes, the element's center is aligned with the center of its containing block.
+*/
+
+
 .container {
     position: absolute; /* Positions the container absolutely */
     top: 50%; /* Centers the container vertically */
