@@ -1,73 +1,69 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #e6f0fa;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
+    font-family: Arial, sans-serif; /* Sets the font family for the body */
+    background-color: lightblue; /* Sets the background color to light blue */
+    height: 100vh; /* Sets the height to 100% of the viewport height */
+    margin: 0; /* Removes default margin */
+    position: relative; /* Sets the position to relative for positioning child elements */
+}
+
+.container {
+    position: absolute; /* Positions the container absolutely */
+    top: 50%; /* Centers the container vertically */
+    left: 50%; /* Centers the container horizontally */
+    transform: translate(-50%, -50%); /* Adjusts the position to be exactly in the center */
 }
 
 .login-box {
-    background-color: #fff;
-    padding: 30px;
-    box-shadow:
-            0px   /* horizontal offset */
-            0px   /* vertical offset */
-            10px  /* blur radius */
-            rgba(0, 0, 0, 0.1);  /* shadow color */
-
-    text-align: center;
-    border-radius: 8px;
-    width: 300px;
+    background-color: white; /* Sets the background color to white */
+    padding: 30px; /* Adds padding inside the login box */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow around the box */
+    text-align: center; /* Centers the text inside the box */
+    border-radius: 8px; /* Rounds the corners of the box */
+    width: 300px; /* Sets the width of the login box */
 }
 
 h2 {
-    margin: 0;
-    color: #333;
-    font-size: 24px;
+    margin: 0; /* Removes default margin */
+    color: darkgray; /* Sets the text color to dark gray */
+    font-size: 24px; /* Sets the font size */
 }
 
 h3 {
-    /*Adjust the top and bottom margins*/
-    margin: 10px 0 20px 0;
-    color: #666;
-    font-size: 18px;
+    margin: 10px 0 20px 0; /* Sets the margin: top, right, bottom, left */
+    color: gray; /* Sets the text color to gray */
+    font-size: 18px; /* Sets the font size */
 }
 
 input {
-    display: block;
-    width: 80%; /* Adjust the percentage as needed */
-    padding: 10px;
-    margin: 10px auto;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    display: block; /* Sets the display to block */
+    width: 80%; /* Sets the width to 80% of the parent element */
+    padding: 10px; /* Adds padding inside the input */
+    margin: 10px auto; /* Centers the input with automatic left and right margins */
+    border: 1px solid lightgray; /* Sets the border color to light gray */
+    border-radius: 4px; /* Rounds the corners of the input */
 }
 
 button {
-    /*calc() Function: This is a special tool in CSS that lets you do math calculations to set sizes.
-    100%: This means the full width of the parent container. So, if your parent box is 500 pixels wide, 100% is 500 pixels.
-    - 20px: This means you subtract 20 pixels from the total width. It makes the element 20 pixels smaller*/
-    width: calc(100% - 20px);
-    padding: 10px;
-    margin: 20px auto;
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+    width: calc(100% - 20px); /* Sets the width, accounting for padding */
+    padding: 10px; /* Adds padding inside the button */
+    margin: 20px auto; /* Centers the button with automatic left and right margins */
+    background-color: blue; /* Sets the background color to blue */
+    color: white; /* Sets the text color to white */
+    border: none; /* Removes the border */
+    border-radius: 4px; /* Rounds the corners of the button */
+    cursor: pointer; /* Changes the cursor to a pointer on hover */
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: darkblue; /* Changes the background color to dark blue on hover */
 }
 
 a {
-    color: #007BFF;
-    text-decoration: none;
+    color: blue; /* Sets the link color to blue */
+    text-decoration: none; /* Removes the underline from links */
 }
 
 .forgot-password,
 .create-account {
-    margin: 10px 0;
+    margin: 10px 0; /* Sets the margin: top and bottom, 0 on left and right */
 }
