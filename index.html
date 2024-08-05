@@ -1,26 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html> <!-- Defines this document as an HTML5 document -->
+<html lang="en"> <!-- Begins the HTML document with the language set to English -->
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign In</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8"> <!-- Sets the character encoding to UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures responsive design on different devices -->
+    <title>Sign In</title> <!-- Sets the title of the webpage, displayed in the browser tab -->
+    <link rel="stylesheet" href="styles.css"> <!-- Links to an external CSS file for styling -->
 </head>
 <body>
-<div class="login-box">
-    <h2>Welcome Back</h2>
-    <h3>Sign In</h3>
-    <form>
-        <input type="email" placeholder="Email" required>
-        <input type="password" placeholder="Password" required>
-        <div class="forgot-password">
-            <a href="#">Forgot?</a>
-        </div>
-        <button type="submit">Sign In</button>
-        <div class="create-account">
-            <a href="#">I don't have an account</a>
-        </div>
-    </form>
+<div class="container"> <!-- Container div for centering and organizing the content -->
+    <div class="login-box"> <!-- Div for styling the login box -->
+        <h2>Welcome Back</h2> <!-- Header for a welcome message -->
+        <h3>Sign In</h3> <!-- Subheader indicating the purpose of the form -->
+        <form> <!-- Begins the form element -->
+            <input type="email" placeholder="Email" required> <!-- Input field for email, required for submission -->
+            <input type="password" placeholder="Password" required> <!-- Input field for password, required for submission -->
+            <div class="forgot-password"> <!-- Div for the forgot password link -->
+                <a href="#">Forgot?</a> <!-- Link for users who forgot their password -->
+            </div>
+            <button type="submit">Sign In</button> <!-- Submit button for the form -->
+            <div class="create-account"> <!-- Div for the create account link -->
+                <a href="#">I don't have an account</a> <!-- Link for users who do not have an account -->
+            </div>
+        </form> <!-- Ends the form element -->
+    </div>
 </div>
 </body>
 </html>
